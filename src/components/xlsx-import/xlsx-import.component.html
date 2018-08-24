@@ -1,0 +1,12 @@
+<br/><br/>
+<mat-toolbar color="accent">
+    <mat-icon>transform</mat-icon>
+    <span>Location info generator</span>
+</mat-toolbar>
+<mat-card>
+    <input id="fileImport" type="file" style="display: inline-block;" placeholder="Upload file" accept=".xlsx" (change)="incomingfile($event)">
+    <button id="calculate" mat-raised-button type="button" class="btn btn-info" (click)="handleFile()" color="accent">
+        <mat-icon>file_copy</mat-icon>
+        Generate file
+    </button>
+</mat-card>
